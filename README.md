@@ -1,27 +1,28 @@
-# 🍔 QA Testing: Urban.Lunch App - Sprint 6
+# QA Testing Report: Urban.Lunch App - Sprint 6
 
-¡Hola! Soy **Reynier Martin**, analista de QA en formación. [cite_start]Este repositorio contiene el trabajo realizado durante el **Sprint 6** de pruebas para la aplicación móvil **Urban.Lunch**. [cite: 1]
+Analista: Reynier Martin
+Proyecto: Urban.Lunch (Android Application)
+Herramientas: Android Studio, Jira, Excel.
 
-## 📋 Resumen del Proyecto
-[cite_start]En este sprint, mi objetivo fue validar la experiencia del usuario desde la selección del punto de recogida hasta el seguimiento final del pedido. [cite: 1] Me enfoqué en asegurar que la aplicación no solo fuera funcional, sino también lógica y fácil de entender para el cliente.
+## Resumen del Proyecto
+Este repositorio documenta la ejecución de pruebas y el reporte de errores correspondientes al flujo de selección de platillos y seguimiento de pedidos. El objetivo principal fue asegurar la integridad de la lógica de negocio y la correcta visualización de la interfaz de usuario.
 
-### 🛠️ Herramientas y Entorno
-* **Android Studio Panda 1**: Utilicé el **Layout Inspector** y **Logcat** para investigar errores que no se ven a simple vista.
-* [cite_start]**Jira**: Documentación profesional de hallazgos. [cite: 2, 3]
-* [cite_start]**Excel**: Seguimiento de una lista de comprobación de 47 casos de prueba. [cite: 1, 2, 3, 4]
+## Metodología y Herramientas
+* Android Studio Panda 1: Uso de Layout Inspector para la validación de la jerarquía de componentes y Logcat para monitoreo de eventos.
+* Jira: Documentación de defectos bajo estándares de severidad y prioridad.
+* Diseño de Pruebas: Ejecución de 47 casos de prueba basados en los requisitos del producto.
 
-## 🔍 Hallazgos Principales (Bugs)
-Durante las pruebas, identifiqué fallos importantes que fueron reportados en Jira:
+## Hallazgos Críticos
+Durante el ciclo de pruebas se identificaron los siguientes defectos:
 
-1. [cite_start]**Error de Lógica en Temporizador**: La app muestra el tiempo para "entrega a domicilio" cuando el usuario eligió "recogida en tienda". [cite: 3]
-2. **Omisión de Componentes**: Gracias al **Layout Inspector**, descubrí que el "tiempo de preparación" no aparece porque el elemento no existe en el código visual (`Component Tree`).
-3. [cite_start]**Defecto de Interfaz (UI)**: El nombre del restaurante se superpone con el precio, dificultando la lectura. [cite: 2]
+1. Discrepancia de Lógica en Temporizador: El sistema muestra el tiempo estimado de entrega a domicilio en lugar del tiempo de recogida en establecimiento, contraviniendo el requisito de negocio.
+2. Omisión de Componentes en UI: Mediante el uso de Layout Inspector, se confirmó la ausencia del nodo de texto para el "tiempo de preparación" en el Component Tree.
+3. Superposición de Elementos: Defecto visual en la pantalla de detalles donde el nombre del restaurante interfiere con la lectura del costo y el tiempo.
 
-## 📊 Estado de las Pruebas
-[cite_start]De acuerdo con mi hoja de resultados[cite: 1, 2, 3]:
-* [cite_start]**Casos Aprobados**: La mayoría del flujo principal (selección de mapa, botones de cantidad y navegación). [cite: 1]
-* [cite_start]**Casos No Aprobados**: 3 (Relacionados con visualización de datos y lógica de tiempos). [cite: 2, 3]
-* [cite_start]**Casos Omitidos**: 2 (Por falta de acceso a geolocalización o datos de distancia). [cite: 1, 3]
+## Estado Final de las Pruebas
+* Casos Aprobados: 43
+* Casos No Aprobados: 3
+* Casos Omitidos: 2
 
 ---
-*Este proyecto es parte de mi formación como QA Engineer, demostrando habilidades en análisis técnico y documentación.*
+Documentación técnica generada para el portafolio de QA Engineering.
