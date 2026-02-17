@@ -23,6 +23,7 @@ Durante el ciclo de pruebas se identificaron los siguientes defectos:
 * Casos Aprobados: 43
 * Casos No Aprobados: 3
 * Casos Omitidos: 2
-
+---
+**Nota de navegación:** Los archivos de la Lista de comprobación, reportes de errores y evidencias visuales se encuentran adjuntos directamente en la raíz de este repositorio para facilitar su consulta y asegurar la disponibilidad de la información.
 ---
 Documentación técnica generada para el portafolio de QA Engineering.
