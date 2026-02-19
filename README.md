@@ -1,29 +1,32 @@
 # QA Testing Report: Urban.Lunch App - Sprint 6
 
-Analista: Reynier Martin
-Proyecto: Urban.Lunch (Android Application)
-Herramientas: Android Studio, Jira, Excel.
+**Analyst:** Reynier Martin  
+**Project:** Urban.Lunch (Android Application)  
+**Tools:** Android Studio, Jira, Excel
 
-## Resumen del Proyecto
-Este repositorio documenta la ejecución de pruebas y el reporte de errores correspondientes al flujo de selección de platillos y seguimiento de pedidos. El objetivo principal fue asegurar la integridad de la lógica de negocio y la correcta visualización de la interfaz de usuario.
+## Project Summary
+This repository documents the test execution and defect reporting for the dish selection and order tracking flows. The primary objective was to ensure business logic integrity and correct UI rendering.
 
-## Metodología y Herramientas
-* Android Studio Panda 1: Uso de Layout Inspector para la validación de la jerarquía de componentes y Logcat para monitoreo de eventos.
-* Jira: Documentación de defectos bajo estándares de severidad y prioridad.
-* Diseño de Pruebas: Ejecución de 47 casos de prueba basados en los requisitos del producto.
+## Methodology and Tools
+* **Android Studio Panda 1:** Utilized Layout Inspector for component hierarchy validation and Logcat for event monitoring.
+* **Jira:** Defect documentation following severity and priority standards.
+* **Test Design:** Execution of 47 test cases based on product requirements.
 
-## Hallazgos Críticos
-Durante el ciclo de pruebas se identificaron los siguientes defectos:
+## Critical Findings
+During the testing cycle, the following defects were identified:
+* **Timer Logic Discrepancy:** The system displays the estimated home delivery time instead of the pickup time, contradicting the business requirement.
+* **Missing UI Components:** Layout Inspector confirmed the absence of the "preparation time" text node within the Component Tree.
+* **Element Overlap:** Visual defect on the details screen where the restaurant name interferes with the readability of cost and time.
 
-1. Discrepancia de Lógica en Temporizador: El sistema muestra el tiempo estimado de entrega a domicilio en lugar del tiempo de recogida en establecimiento, contraviniendo el requisito de negocio.
-2. Omisión de Componentes en UI: Mediante el uso de Layout Inspector, se confirmó la ausencia del nodo de texto para el "tiempo de preparación" en el Component Tree.
-3. Superposición de Elementos: Defecto visual en la pantalla de detalles donde el nombre del restaurante interfiere con la lectura del costo y el tiempo.
+## Final Test Status
+* **Passed:** 42
+* **Failed:** 3
+* **Skipped:** 2
 
-## Estado Final de las Pruebas
-* Casos Aprobados: 43
-* Casos No Aprobados: 3
-* Casos Omitidos: 2
+## Navigation Note
+Checklist files, bug reports, and visual evidence are attached directly to the root of this repository to ensure easy access and information availability.
+
 ---
-**Nota de navegación:** Los archivos de la Lista de comprobación, reportes de errores y evidencias visuales se encuentran adjuntos directamente en la raíz de este repositorio para facilitar su consulta y asegurar la disponibilidad de la información.
----
-Documentación técnica generada para el portafolio de QA Engineering.
+*Technical documentation generated for the QA Engineering portfolio.*
+
+**Contact:** [reynierwork26@gmail.com](mailto:reynierwork26@gmail.com)
